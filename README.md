@@ -1,4 +1,5 @@
 SPOTIFY CLONE
+
 A simple web-based Spotify clone created using HTML, CSS, and JavaScript. 
 
 Features
