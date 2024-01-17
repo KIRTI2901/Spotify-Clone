@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #121212;
+    font-family: sans-serif;
+}
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: #000000;
+    padding: 24px;
+}
+
+.sidebar .logo img{
+    width: 130px;
+}
+
+.sidebar .navigation ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar .navigation li{
+    padding: 10px 0px;
+}
+
+.sidebar .navigation ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.sidebar .navigation ul li .fa{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.sidebar .navigation ul li a:hover{
+    color: #ffffff;
+}
+
+.sidebar .policies{
+    position: absolute;
+    bottom :5px;
+}
+
+.sidebar .policies ul{
+    list-style: none;
+}
+
+.sidebar .policies ul li{
+    padding-bottom: 5px;
+}
+
+.sidebar .policies ul li a{
+    color: #b3b3b3;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.sidebar .policies ul li a:hover{
+    text-decoration: underline;
+}
+
+.main-container{
+    margin-left: 350px;
+    margin-bottom: 100px;
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 14px 30px;
+}
+
+.topbar .prev-next-buttons button{
+    color: #7a7a7a;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0px;
+    background-color: #090909;
+    margin-right: 10px;
+}
+
+.topbar .navbar{
+    display: flex;
+    align-items: center;
+}
+
+.topbar .navbar ul{
+    list-style: none;
+}
+
+.topbar .navbar ul li{
+    display: inline-block;
+    margin: 0px 0px;
+    width: 70px;
+}
+
+.topbar .navbar ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.topbar .navbar ul li a:hover{
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.topbar .navbar button{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.topbar .navbar button:hover{
+    background-color: #f2f2f2;
+}
+
+.spotify-playlist{
+    color: white;
+    font-size: 30px;
+    padding: 20px 20px;
+}
+.container{
+    min-height: 75vh;
+}
+
+.container{
+    min-height: 72vh;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    margin: 23px auto;
+    padding: 20px 40px;
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 14px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+   width: 60vw;
+   cursor: pointer;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 20px;
+    width : 60vh;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.songItem img{
+    width: 60px;
+    margin: 20px 10px;
+    border-radius: 32px
+}
+
+.songList
+{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-top: 34px;
+}
+
+.timeStamp{
+    margin: 0 23px;
+}
+
+.timeStamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 8vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}

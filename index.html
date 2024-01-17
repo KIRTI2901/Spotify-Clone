@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/Spotify_favicon.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">
+            <a href="">
+                <img src="images/Spotify Logo.png" alt="Logo">
+            </a>
+        </div>
+
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="">
+                    <span class="fa fa-home"></span>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="fa fa-search"></span>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="fa fas fa-book"></span>
+                    <span>Your Library</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="">
+                    <span class="fa fa-home"></span>
+                    <span>Create Playlist</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="fa fa-search"></span>
+                    <span>Liked Songs</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="policies">
+        <ul>
+            <li>
+                <a href="">Cookies</a>
+            </li>
+            <li>
+                <a href="">Privacy</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="main-container">
+        <div class="topbar">
+            <div class="prev-next-buttons">
+                <button type="button" class="fa fas fa-chevron-left"></button>
+                <button type="button" class="fa fas fa-chevron-right"></button>
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="">Sign Up</a>
+                    </li>
+                </ul>
+                <button type="button">Login</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="songs">
+                <h1 class="spotify-playlist">Spotify Playlist</h1>
+                <div class="songList">
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songListPlay"><span class="timeStamp"><i id="1" class=" songItemPlay fa-solid fa-2x fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songListPlay"><span class="timeStamp"><i id="2" class=" songItemPlay fa-solid fa-2x fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songListPlay"><span class="timeStamp"><i id="3" class=" songItemPlay fa-solid fa-2x fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songListPlay"><span class="timeStamp"><i id="4" class=" songItemPlay fa-solid fa-2x fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songListPlay"><span class="timeStamp"><i id="5" class=" songItemPlay fa-solid fa-2x fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songListPlay"><span class="timeStamp"><i id="6" class=" songItemPlay fa-solid fa-2x fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songListPlay"><span class="timeStamp"><i id="7" class=" songItemPlay fa-solid fa-2x fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songListPlay"><span class="timeStamp"><i id="8" class=" songItemPlay fa-solid fa-2x fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songListPlay"><span class="timeStamp"><i id="9" class=" songItemPlay fa-solid fa-2x fa-circle-play"></i></span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songListPlay"><span class="timeStamp"><i id="10" class=" songItemPlay fa-solid fa-2x fa-circle-play"></i></span></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="songBanner"></div>
+        </div>
+        
+
+        <div class="bottom">
+            <input type="range" name="range" id="myProgressBar" min="0" value = "0" max="100">
+            <div class="icons">
+                <!-- font awesome icons -->
+                <i class="fa-solid fa-2x fa-backward-step" id="previous"></i>
+                <i class="fa-solid fa-2x fa-circle-play" id="masterPlay"></i>
+                <i class="fa-solid fa-2x fa-forward-step" id="next"></i>
+            </div>
+            <br>
+            <div class="songInfo">
+                <img src="images/playing.gif" width="80px" height="40px" alt="" id="gif"> <span id="masterSongName">Let me Love You</span> 
+            </div>
+        </div>
+    </div>    
+    <script src="https://kit.fontawesome.com/2a8d224c8e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
